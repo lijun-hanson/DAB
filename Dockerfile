@@ -1,3 +1,3 @@
 FROM alpine
-touch testfile
+RUN ['/bin/sh', '-c', 'touch testfile']
 CMD ls ./
